@@ -10,12 +10,12 @@ $(document).ready(function () {
         }
     });
 
-    function displayData(response) {
+    function displayData(results) {
         let output = '';
 
-        $.each(response.results, function (key, result) {
+        $.each(results, function (key, result) {
             output += `
-            <div class="col-md-4 mb-3 d-flex">
+            <div class="col-md-3 mb-3 d-flex">
                 <div class="card text-center mb-3" style="width: 18rem;">
                     <div class="card-body">
                         <p class="card-text">${result.name}</p>
